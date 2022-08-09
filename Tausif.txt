@@ -563,40 +563,9 @@ void display(void)
 
 	glColor3f(0.0, 0.0, 1.0);
 
-
     night();
-
-    star();
-
-    House_Big_Two();
-
-    plane2();
-
-    tree();
-
-    Tilla_Four();
-
-    Hill_Big_Two();
-
-    Hill_Small_two();
-
-    Hill_Small_One();
-
-    cloud_three();
-
-    cloud_four();
-
-    Windmill_One();
-
-    Windmill_Two();
-
-    Tilla_One();
-
-    Tilla_Two();
-
-    Tilla_Three();
-
-    cloud_one();
+    
+    tree();   
 
     Tree_One();
 
@@ -615,19 +584,8 @@ void display(void)
     Tree_Eight();
 
     Tree_Twelve();
-
-    House_Big_One();
-
-    cloud_two();
-
-    cloud_five();
-
-    cloud_six();
-
-    beach();
-
+    
     Boat();
-
 
 	glFlush();
 
