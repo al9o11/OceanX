@@ -1,0 +1,693 @@
+void house_smallt(){
+    glBegin(GL_QUADS);
+    glColor3ub(100, 50, 0);//rgb color picker
+ 
+    glVertex2f(160, 450); // x, y
+    glVertex2f(160, 270); // x, y
+    glVertex2f(210, 270); // x, y
+    glVertex2f(210, 450); // x, y
+ 
+    glEnd();
+ 
+    //window 1
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 440); // x, y
+    glVertex2f(170, 430); // x, y
+    glVertex2f(200, 430); // x, y
+    glVertex2f(200, 440); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 440);// x, y
+    glVertex2f(185, 430);// x, y
+ 
+    glEnd();
+ 
+ 
+    //window 2
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 410); // x, y
+    glVertex2f(170, 400); // x, y
+    glVertex2f(200, 400); // x, y
+    glVertex2f(200, 410); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 410);// x, y
+    glVertex2f(185, 400);// x, y
+ 
+    glEnd();
+ 
+    //window 3
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 380); // x, y
+    glVertex2f(170, 370); // x, y
+    glVertex2f(200, 370); // x, y
+    glVertex2f(200, 380); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 380);// x, y
+    glVertex2f(185, 370);// x, y
+ 
+    glEnd();
+ 
+    //window 4
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 350); // x, y
+    glVertex2f(170, 340); // x, y
+    glVertex2f(200, 340); // x, y
+    glVertex2f(200, 350); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 350);// x, y
+    glVertex2f(185, 340);// x, y
+ 
+    glEnd();
+ 
+    //window 5
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 320); // x, y
+    glVertex2f(170, 310); // x, y
+    glVertex2f(200, 310); // x, y
+    glVertex2f(200, 320); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 320);// x, y
+    glVertex2f(185, 310);// x, y
+ 
+    glEnd();
+ 
+ 
+    //window 6
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(170, 290); // x, y
+    glVertex2f(170, 280); // x, y
+    glVertex2f(200, 280); // x, y
+    glVertex2f(200, 290); // x, y
+ 
+    glEnd();
+ 
+    glBegin(GL_LINES);
+    glColor3f(0, 255, 0); // Black
+ 
+    glVertex2f(185, 290);// x, y
+    glVertex2f(185, 280);// x, y
+ 
+    glEnd();
+ 
+}
+ 
+void house_small()
+{
+ 
+    glBegin(GL_QUADS);
+    glColor3ub(237, 214, 108);//rgb color picker
+ 
+    glVertex2f(0, 400); // x, y
+    glVertex2f(0, 220); // x, y
+    glVertex2f(30, 220); // x, y
+    glVertex2f(30, 400); // x, y
+ 
+    glEnd();
+ 
+ 
+    //window 1
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 390); // x, y
+    glVertex2f(10, 380); // x, y
+    glVertex2f(20, 380); // x, y
+    glVertex2f(20, 390); // x, y
+ 
+    glEnd();
+ 
+ 
+    //window 2
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 360); // x, y
+    glVertex2f(10, 350); // x, y
+    glVertex2f(20, 350); // x, y
+    glVertex2f(20, 360); // x, y
+ 
+    glEnd();
+ 
+ 
+ 
+    //window 3
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 330); // x, y
+    glVertex2f(10, 320); // x, y
+    glVertex2f(20, 320); // x, y
+    glVertex2f(20, 330); // x, y
+ 
+    glEnd();
+ 
+ 
+ 
+    //window 4
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 300); // x, y
+    glVertex2f(10, 290); // x, y
+    glVertex2f(20, 290); // x, y
+    glVertex2f(20, 300); // x, y
+ 
+    glEnd();
+ 
+ 
+    //window 5
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 270); // x, y
+    glVertex2f(10, 260); // x, y
+    glVertex2f(20, 260); // x, y
+    glVertex2f(20, 270); // x, y
+ 
+    glEnd();
+ 
+ 
+    //window 6
+    glBegin(GL_QUADS);
+    glColor3ub(255, 255, 255);//rgb color picker
+ 
+    glVertex2f(10, 240); // x, y
+    glVertex2f(10, 230); // x, y
+    glVertex2f(20, 230); // x, y
+    glVertex2f(20, 240); // x, y
+ 
+    glEnd();
+ 
+}
+ 
+ 
+ 
+///Tilla_Model
+ 
+void Tilla_One_Model()
+{
+ 
+    ///Tilla
+ 
+            glBegin(GL_POLYGON);
+ 
+            glColor3ub(34.0, 153.0, 84.0);
+ 
+            glVertex2i(125, 70);
+ 
+            glVertex2i(150, 80);
+ 
+            glVertex2i(160, 90);
+ 
+            glVertex2i(170, 90);
+ 
+            glVertex2i(180, 100);
+ 
+            glVertex2i(190, 105);
+ 
+            glVertex2i(200, 108);
+ 
+            glVertex2i(400, 10);
+ 
+            glVertex2i(300, 70);
+ 
+ 
+            glEnd();
+ 
+ 
+}
+ 
+ 
+void Tilla_Two_Model(){
+ 
+ 
+            glColor3ub(34.0, 153.0, 84.0);
+ 
+    /// Left_Part
+ 
+    glPushMatrix();
+ 
+    glTranslatef(430,90,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(420,87,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(410,80,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(400,80,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(390,70,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    ///Right_Part
+ 
+    glPushMatrix();
+ 
+    glTranslatef(445,80,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(455,75,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(465,70,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(470,65,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(480,60,0);
+ 
+    circle(30);
+ 
+    glPopMatrix();
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(485,55,0);
+ 
+    circle(20);
+ 
+    glPopMatrix();
+ 
+}
+ 
+bool con(){
+ 
+return condition=true;
+ 
+}
+ 
+ 
+float updatex()
+{
+ 
+  return   n1=-700,s1=241,s2=240,s3=236;
+ 
+}
+ 
+float updatex1()
+{
+ 
+  return   n1=1000,s1=0,s2=1,s3=1;
+ 
+}
+ 
+ 
+void night(){
+ 
+ 
+glColor3f(.0, 0.0, 0.0);
+ 
+ 
+    glPushMatrix();
+ 
+    glBegin(GL_POLYGON);
+ 
+    glVertex3i(0,n1,0);
+ 
+    glVertex3i(0,1000, 0);
+ 
+    glVertex3i(1200,1000, 0);
+ 
+    glVertex3i(1200,n1, 0);
+ 
+    glPopMatrix();
+ 
+    glEnd();
+ 
+}
+ 
+bool con(){
+ 
+return condition=true;
+ 
+}
+ 
+ 
+float updatex()
+{
+ 
+  return   n1=-700,s1=241,s2=240,s3=236;
+ 
+}
+ 
+float updatex1()
+{
+ 
+  return   n1=1000,s1=0,s2=1,s3=1;
+ 
+}
+ 
+ 
+void night(){
+ 
+ 
+glColor3f(.0, 0.0, 0.0);
+ 
+ 
+    glPushMatrix();
+ 
+    glBegin(GL_POLYGON);
+ 
+    glVertex3i(0,n1,0);
+ 
+    glVertex3i(0,1000, 0);
+ 
+    glVertex3i(1200,1000, 0);
+ 
+    glVertex3i(1200,n1, 0);
+ 
+    glPopMatrix();
+ 
+    glEnd();
+ 
+}
+ 
+//House_big_Two
+ 
+void House_Big_One(){
+ 
+    glPushMatrix();
+ 
+    glTranslatef(560,0,0);//-20
+ 
+    house_smallt();
+ 
+    glPopMatrix();
+}
+ 
+void House_Big_Two(){
+ 
+    glPushMatrix();
+ 
+    glTranslatef(675,50,0);//-20
+ 
+    house_small();
+ 
+    glPopMatrix();
+}
+ 
+ 
+/// Tilla_One_Model_One
+ 
+ 
+ 
+void Tilla_One(){
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(0,200,0);
+ 
+    Tilla_One_Model();
+ 
+    glPopMatrix();
+ 
+ 
+}
+ 
+///Tilla_Two_Model_Two
+ 
+void Tilla_Two(){
+ 
+    glPushMatrix();
+ 
+    glTranslatef(0,200,0);
+ 
+    Tilla_Two_Model();
+ 
+    glPopMatrix();
+ 
+ 
+}
+ 
+///Tilla_Three_Model_Two
+ 
+void Tilla_Three(){
+ 
+ 
+    glPushMatrix();
+ 
+    glTranslatef(400,200,0);
+ 
+    Tilla_Two_Model();
+ 
+    glPopMatrix();
+ 
+ 
+}
+ 
+///Tilla_Four_Model_One
+ 
+void Tilla_Four(){
+ 
+ 
+    glColor3f(0.833, 1., 0.0);
+ 
+    glPushMatrix();
+ 
+    glTranslatef(380,200,0);
+ 
+ 
+    Tilla_One_Model();
+ 
+    glPopMatrix();
+ 
+ 
+}
+ 
+ 
+void display(void)
+ 
+{
+ 
+            glClear(GL_COLOR_BUFFER_BIT);
+ 
+            glColor3f(0.0, 0.0, 1.0);
+ 
+ 
+    night();
+ 
+  house_smallt();
+ hosue_small();
+   
+ 
+   
+    Tilla_Four();
+ 
+ 
+ 
+    Tilla_One();
+ 
+    Tilla_Two();
+ 
+    Tilla_Three();
+ 
+   
+ 
+   
+ 
+ 
+            glFlush();
+ 
+}
+ 
+ 
+ 
+ 
+ 
+void mouse(int key, int state, int x, int y){
+ 
+    switch (key)
+ 
+    {
+ 
+    case GLUT_LEFT_BUTTON:
+ 
+        if (state == GLUT_DOWN)
+ 
+        {
+ 
+            glutIdleFunc(move_right);
+ 
+        }
+ 
+        break;
+ 
+    case GLUT_MIDDLE_BUTTON:
+ 
+    case GLUT_RIGHT_BUTTON:
+ 
+        if (state == GLUT_DOWN)
+ 
+        {
+ 
+            glutIdleFunc(NULL);
+ 
+        }
+ 
+        break;
+ 
+    default:
+ 
+        break;
+ 
+    }
+ 
+ 
+ 
+}
+ 
+void handleKeypress(unsigned char key, int x, int y) {
+ 
+            switch (key) {
+ 
+ 
+  case 'n':
+ 
+    updatex();
+ 
+    condition=true;
+ 
+    break;
+ 
+ 
+ 
+   case 'd':
+ 
+       updatex1();
+ 
+       condition=false;
+ 
+   break;
+ 
+   glutPostRedisplay();
+ 
+}
+ 
+}
+ 
+int main(int argc, char** argv)
+ 
+{
+ 
+            glutInit(&argc, argv);
+ 
+            glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+ 
+            glutInitWindowPosition(22, 30);
+ 
+            glutInitWindowSize(1500, 750);
+ 
+            glutCreateWindow("Sea_Beach With_Mountain");
+ 
+            init();
+ 
+            glutDisplayFunc(display);
+ 
+            glutTimerFunc(20, update, 0);
+ 
+            glutTimerFunc(20, update1, 0);
+ 
+            glutTimerFunc(20, update2, 0);
+ 
+ 
+    glutMouseFunc(mouse);
+ 
+    glutKeyboardFunc(handleKeypress);
+ 
+            glutMainLoop();
+ 
+}
