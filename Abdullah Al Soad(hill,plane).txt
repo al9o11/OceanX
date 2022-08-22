@@ -1,0 +1,106 @@
+void hill_RightBottom()
+{
+    glPushMatrix();
+    glColor3ub(14,141,14);
+    glBegin(GL_POLYGON);
+    glVertex2f(360.0f,0.0f);
+    glVertex2f(570.0f,0.0f);
+    glVertex2f(570.0f,150.0f);
+    glVertex2f(470.0f,300.0f);
+    glColor3ub(91,143,95);
+    glVertex2f(330.0f,30.0f);
+    glEnd();
+
+    glColor3ub(14,114,14);
+    glBegin(GL_TRIANGLES);
+    glVertex2f(570.0f,150.0f);
+    glVertex2f(570.0f,270.0f);
+    glColor3ub(91,143,95);
+    glVertex2f(530.0f,210.0f);
+    glEnd();
+    glPopMatrix();
+
+}
+void plane()
+{
+
+    glColor3ub(255.0f,255.0f,255.0f);
+
+    glPushMatrix();
+
+    glBegin(GL_POLYGON);
+    glVertex2f(36.0f,36.0f);
+    glVertex2f(34.0f,34.0f);
+    glVertex2f(36.0f,32.0f);
+    glVertex2f(45.0f,32.0f);
+    glVertex2f(49.0f,35.0f);
+    glVertex2f(46.0f,36.0f);
+    glEnd();
+
+    glColor3ub(200.0,200.0,200.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(34.0f,34.0f);
+    glVertex2f(35.0f,33.0f);
+    glVertex2f(46.3f,32.9f);
+    glVertex2f(47.8f,34.0f);
+    glEnd();
+
+    ///wings
+    glColor3ub(200.0,0.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(46.0f,36.0f);
+    glVertex2f(47.5f,40.0f);
+    glVertex2f(45.5f,40.0f);
+    glVertex2f(43.0f,36.0f);
+    glEnd();
+
+    glColor3ub(200.0,0.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(39.0f,31.0f);
+    glVertex2f(42.0f,31.0f);
+    glVertex2f(40.0f,34.0f);
+    glVertex2f(37.0f,34.0f);
+    glEnd();
+
+    glColor3ub(200.0,0.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(45.0f,34.0f);
+    glVertex2f(47.0f,32.0f);
+    glVertex2f(49.0f,32.0f);
+    glVertex2f(47.0f,34.0f);
+    glEnd();
+
+    ///plane_lights
+    glColor3ub(255.0,255.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(38.5f,31.4f);
+    glVertex2f(39.0f,31.4f);
+    glVertex2f(39.0f,31.9f);
+    glVertex2f(38.5f,31.9f);
+    glEnd();
+
+    glColor3ub(255.0,255.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(46.5f,32.3f);
+    glVertex2f(47.0f,32.3f);
+    glVertex2f(47.0f,32.8f);
+    glVertex2f(46.5f,32.8f);
+    glEnd();
+
+    ///windows
+    glColor3ub(0.0,0.0,0.0);
+    glBegin(GL_POLYGON);
+    glVertex2f(35.0f,34.5f);
+    glVertex2f(36.5f,34.5f);
+    glVertex2f(36.5f,35.5f);
+    glVertex2f(35.8f,35.5f);
+    glEnd();
+
+
+
+    glPopMatrix();
+
+
+}
+
+
