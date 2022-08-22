@@ -23,8 +23,6 @@
 
     GLfloat sr=0.0,sg=0.749,sb=1.0;
 
-    GLfloat spin = 0.0;
-
 
 bool condition=false;
 
@@ -36,7 +34,7 @@ bool condition=false;
 
     GLfloat _move1 =3.0f;
 
-    GLfloat position2 = 900.0f;
+    GLfloat position2 = 400.0f;
 
     GLfloat _move2 =3.0f;
 
@@ -489,462 +487,78 @@ void cloud_model_Three(){
 
 }
 
-
-void hill_big2(){
-
-
-    ///Hill
-
-	glBegin(GL_POLYGON);
-
-    glColor3f(0.38, 0.41, 0.36);
-
-	glVertex2i(330, 70);
-
-	glVertex2i(200, 170);
-
-	glVertex2i(230, 190);
-
-	glVertex2i(220, 180);
-
-	glVertex2i(200, 190);
-
-	glVertex2i(190, 180);
-
-	glVertex2i(170, 190);
-
-    glVertex2i(70, 70);
-
-
-	glEnd();
-
-
-	///Hill_Snow
-
+void lightHouse()
+{
+        glColor3ub(255.0f,171.0f,0.0f);
     glBegin(GL_POLYGON);
+    glVertex2f(905.0f,0.0f);
+    glVertex2f(950.0f,0.0f);
+    glVertex2f(950.0f,200.0f);
+    glVertex2f(905.0f,200.0f);
+    glEnd();
 
-    glColor3f(1.25, 0.924, 0.930);
+    glColor3ub(255.0f,210.0f,0.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(905.0f,200.0f);
+    glVertex2f(950.0f,200.0f);
+    glVertex2f(965.0f,210.0f);
+    glVertex2f(900.0f,210.0f);
+    glEnd();
 
+    glColor3ub(204.0f,110.0f,0.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(906.0f,210.0f);
+    glVertex2f(949.0f,210.0f);
+    glVertex2f(949.0f,240.0f);
+    glVertex2f(906.0f,240.0f);
+    glEnd();
 
-
-	glVertex2i(200, 225);
-
-	glVertex2i(230, 190);
-
-	glVertex2i(220, 180);
-
-	glVertex2i(200, 190);
-
-	glVertex2i(190, 180);
-
-	glVertex2i(170, 190);
-
-	glEnd();
+    glColor3ub(255.0f,255.0f,255.0f);
+    glBegin(GL_POLYGON);
+    glVertex2f(926.5f,240.0f);
+    glVertex2f(932.0f,260.0f);
+    glVertex2f(926.5f,280.0f);
+    glVertex2f(921.0f,260.0f);
+    glEnd();
 
 }
 
-
-void hill_123()
+void hill_RightBottom()
 {
-
-    glColor3f(0.38, 0.41, 0.36);
+    glPushMatrix();
+    glColor3ub(14,141,14);
     glBegin(GL_POLYGON);
-    glVertex2f(390.0f,30.0f);
-    glVertex2f(600.0f,30.0f);
-    glVertex2f(600.0f,180.0f);
-    glVertex2f(500.0f,330.0f);
-    glColor3f(0.0f,0.0f,90.0f);
-    glVertex2f(360.0f,60.0f);
+    glVertex2f(360.0f,0.0f);
+    glVertex2f(570.0f,0.0f);
+    glVertex2f(570.0f,150.0f);
+    glVertex2f(470.0f,300.0f);
+    glColor3ub(91,143,95);
+    glVertex2f(330.0f,30.0f);
     glEnd();
 
-    glColor3f(0.38, 0.41, 0.36);
+    glColor3ub(14,114,14);
     glBegin(GL_TRIANGLES);
-    glVertex2f(600.0f,180.0f);
-    glVertex2f(600.0f,300.0f);
-    glColor3f(0.0f,0.0f,90.0f);
-    glVertex2f(560.0f,240.0f);
+    glVertex2f(570.0f,150.0f);
+    glVertex2f(570.0f,270.0f);
+    glColor3ub(91,143,95);
+    glVertex2f(530.0f,210.0f);
     glEnd();
+    glPopMatrix();
 
 }
 
 void hill_small()
 {
-    glColor3f(0.38, 0.41, 0.36);
+    glColor3ub(14,114,14);
     glBegin(GL_POLYGON);
     glVertex2f(0.0f,30.0f);
     glVertex2f(205.0f,30.0f);
     glVertex2f(205.0f,60.0f);
     glColor3f(0.38, 0.41, 0.36);
     glVertex2f(70.0f,250.0f);
-    glColor3f(0.0f,0.0f,90.0f);
+    glColor3ub(91,143,95);
     glVertex2f(0.0f,150.0f);
     glEnd();
-
-}
-
-
-void house_smallt(){
-    glBegin(GL_QUADS);
-    glColor3ub(100, 50, 0);//rgb color picker
-
-    glVertex2f(160, 450); // x, y
-    glVertex2f(160, 270); // x, y
-    glVertex2f(210, 270); // x, y
-    glVertex2f(210, 450); // x, y
-
-    glEnd();
-
-    //window 1
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 440); // x, y
-    glVertex2f(170, 430); // x, y
-    glVertex2f(200, 430); // x, y
-    glVertex2f(200, 440); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 440);// x, y
-    glVertex2f(185, 430);// x, y
-
-    glEnd();
-
-
-    //window 2
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 410); // x, y
-    glVertex2f(170, 400); // x, y
-    glVertex2f(200, 400); // x, y
-    glVertex2f(200, 410); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 410);// x, y
-    glVertex2f(185, 400);// x, y
-
-    glEnd();
-
-    //window 3
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 380); // x, y
-    glVertex2f(170, 370); // x, y
-    glVertex2f(200, 370); // x, y
-    glVertex2f(200, 380); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 380);// x, y
-    glVertex2f(185, 370);// x, y
-
-    glEnd();
-
-    //window 4
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 350); // x, y
-    glVertex2f(170, 340); // x, y
-    glVertex2f(200, 340); // x, y
-    glVertex2f(200, 350); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 350);// x, y
-    glVertex2f(185, 340);// x, y
-
-    glEnd();
-
-    //window 5
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 320); // x, y
-    glVertex2f(170, 310); // x, y
-    glVertex2f(200, 310); // x, y
-    glVertex2f(200, 320); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 320);// x, y
-    glVertex2f(185, 310);// x, y
-
-    glEnd();
-
-
-    //window 6
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(170, 290); // x, y
-    glVertex2f(170, 280); // x, y
-    glVertex2f(200, 280); // x, y
-    glVertex2f(200, 290); // x, y
-
-    glEnd();
-
-    glBegin(GL_LINES);
-    glColor3f(0, 255, 0); // Black
-
-    glVertex2f(185, 290);// x, y
-    glVertex2f(185, 280);// x, y
-
-    glEnd();
-
-}
-
-void house_small()
-{
-
-    glBegin(GL_QUADS);
-    glColor3ub(237, 214, 108);//rgb color picker
-
-    glVertex2f(0, 400); // x, y
-    glVertex2f(0, 220); // x, y
-    glVertex2f(30, 220); // x, y
-    glVertex2f(30, 400); // x, y
-
-    glEnd();
-
-
-    //window 1
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 390); // x, y
-    glVertex2f(10, 380); // x, y
-    glVertex2f(20, 380); // x, y
-    glVertex2f(20, 390); // x, y
-
-    glEnd();
-
-
-    //window 2
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 360); // x, y
-    glVertex2f(10, 350); // x, y
-    glVertex2f(20, 350); // x, y
-    glVertex2f(20, 360); // x, y
-
-    glEnd();
-
-
-
-    //window 3
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 330); // x, y
-    glVertex2f(10, 320); // x, y
-    glVertex2f(20, 320); // x, y
-    glVertex2f(20, 330); // x, y
-
-    glEnd();
-
-
-
-    //window 4
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 300); // x, y
-    glVertex2f(10, 290); // x, y
-    glVertex2f(20, 290); // x, y
-    glVertex2f(20, 300); // x, y
-
-    glEnd();
-
-
-    //window 5
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 270); // x, y
-    glVertex2f(10, 260); // x, y
-    glVertex2f(20, 260); // x, y
-    glVertex2f(20, 270); // x, y
-
-    glEnd();
-
-
-    //window 6
-    glBegin(GL_QUADS);
-    glColor3ub(255, 255, 255);//rgb color picker
-
-    glVertex2f(10, 240); // x, y
-    glVertex2f(10, 230); // x, y
-    glVertex2f(20, 230); // x, y
-    glVertex2f(20, 240); // x, y
-
-    glEnd();
-
-}
-
-
-
-///Tilla_Model
-
-void Tilla_One_Model()
-{
-
-    ///Tilla
-
-	glBegin(GL_POLYGON);
-
-	glColor3ub(34.0, 153.0, 84.0);
-
-	glVertex2i(125, 70);
-
-	glVertex2i(150, 80);
-
-	glVertex2i(160, 90);
-
-	glVertex2i(170, 90);
-
-	glVertex2i(180, 100);
-
-	glVertex2i(190, 105);
-
-	glVertex2i(200, 108);
-
-	glVertex2i(400, 10);
-
-	glVertex2i(300, 70);
-
-
-	glEnd();
-
-
-}
-
-
-void Tilla_Two_Model(){
-
-
-	glColor3ub(34.0, 153.0, 84.0);
-
-    /// Left_Part
-
-    glPushMatrix();
-
-    glTranslatef(430,90,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(420,87,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(410,80,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(400,80,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(390,70,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    ///Right_Part
-
-    glPushMatrix();
-
-    glTranslatef(445,80,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(455,75,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(465,70,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(470,65,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(480,60,0);
-
-    circle(30);
-
-    glPopMatrix();
-
-
-    glPushMatrix();
-
-    glTranslatef(485,55,0);
-
-    circle(20);
-
-    glPopMatrix();
 
 }
 
@@ -955,129 +569,82 @@ void beach()
 {
 
     ///beach
-
+    glPushMatrix();
 	glBegin(GL_POLYGON);
 
-    glColor3f(1.0,0.9,0.7 );
+    glColor3ub(238,233,244);
+	glVertex2i(900, 350);
 
-	glVertex2i(0, 10);
+	glColor3ub(238,233,244);
+	glVertex2i(850, 330);
 
-	glVertex2i(0,270);
+	glColor3ub(238,233,244);
+	glVertex2i(800, 300);
 
-	glVertex2i(1000, 270);
+	glColor3ub(238,233,244);
+	glVertex2i(750, 270);
 
-	glVertex2i(1000, 250);
+	glColor3ub(238,233,244);
+	glVertex2i(700, 240);
+
+	glColor3ub(163,124,87);
+	glVertex2i(650, 220);
+
+	glColor3ub(163,124,87);
+	glVertex2i(620, 200);
+
+    glColor3ub(115,118,112);
+	glVertex2i(400,0);
+
+    glColor3ub(163,124,87);
+	glVertex2i(1000,0);
+
+    glColor3ub(115,118,112);
+	glVertex2i(1000, 375);
 
 
 	glEnd();
 
-
-    ///beach_Shadow
-
-	glBegin(GL_POLYGON);
-
-	glColor3f(1.0,0.8, 0.7);
-
-	glVertex2i(0, 150);
-
-	glVertex2i(0, 250);
-
-	glVertex2i(1000, 250);
-
-	glVertex2i(1000, 200);
-
-
-	glEnd();
+	glPopMatrix();
 
 
 	 ///Sea 0.7/0.4/0.4
 
 
 	glBegin(GL_POLYGON);
+	glColor3ub(149,164,210);
+    glVertex2i(0,250);
 
-    glColor3ub(0, 143, 179);
-
+    glColor3ub(9,152,219);
 	glVertex2i(0,0);
 
-	glVertex2i(0,185);
+	glColor3ub(9,152,219);
+	glVertex2i(400,0);
 
-	glVertex2i(600,185);
+	glColor3ub(9,152,219);
+	glVertex2i(620,200);
 
-	glVertex2i(600,0);
+	glColor3ub(9,152,219);
+	glVertex2i(650,220);
+
+    glColor3ub(9,152,219);
+	glVertex2i(700,240);
+
+	glColor3ub(9,152,219);
+	glVertex2i(750,270);
+
+	glColor3ub(238,233,244);
+	glVertex2i(800,300);
+
+	glColor3ub(238,233,244);
+	glVertex2i(850,330);
+
+	glColor3ub(238,233,244);
+	glVertex2i(900,350);
+
 
 
 	glEnd();
-
-
-    ///Sea curve
-
-	glBegin(GL_POLYGON);
-
-	glColor3ub(0, 143, 179);
-
-	glVertex2i(600,0);
-
-	glVertex2i(600, 185);
-
-	glVertex2i(1000, 245);
-
-	glVertex2i(1000,0);
-
-
-	glEnd();
-
-
-
-	 ///beach_2
-
-	glBegin(GL_POLYGON);
-    glColor3ub(0, 143, 179);
-
-
-
-	glVertex2i(0, 00);
-
-	glVertex2i(0, 80);
-
-	glVertex2i(600,50);
-
-	glVertex2i(640, 0);
-
-	glEnd();
-
-
-		 ///beach_3
-
-	glBegin(GL_POLYGON);
-    glColor3ub(0, 143, 179);
-
-
-	glVertex2i(0, 00);
-
-	glVertex2i(0, 50);
-
-	glVertex2i(600,50);
-
-	glVertex2i(600, 0);
-
-	glEnd();
-
-
-	///beach_Shadow3
-
-	 glBegin(GL_POLYGON);
-
-	 glColor3ub(0, 143, 179);
-
-	 glVertex2i(600,0);
-
-	 glVertex2i(600, 50);
-
-	 glVertex2i(1000,30);
-
-	 glVertex2i(1000,0);
-
-	 glEnd();
 }
 
 
@@ -1098,14 +665,16 @@ void Boat()
     glBegin(GL_POLYGON);
 
 	glColor3f(0.0, 0.0, 0.0);
+	glVertex2i(100,25);
 
+    glColor3f(0.0, 0.0, 0.1);
+	glVertex2i(50, 50);
+
+    glColor3f(0.0, 0.0, 0.2);
 	glVertex2i(200,50);
 
-	glVertex2i(100, 100);
-
-	glVertex2i(400,100);
-
-	glVertex2i(300,50);
+    glColor3f(0.0, 0.0, 0.3);
+	glVertex2i(150,25);
 
     glEnd();
 
@@ -1113,14 +682,16 @@ void Boat()
     glBegin(GL_POLYGON);
 
 	glColor3ub(100.0, 105.0, 4.0);
+	glVertex2i(115,50);
 
-	glVertex2i(230,100);
+    glColor3ub(120.0, 100.0, 10.0);
+	glVertex2i(115, 75);
 
-	glVertex2i(230, 150);
+    glColor3ub(140.0, 95.0, 16.0);
+	glVertex2i(160,75);
 
-	glVertex2i(320,150);
-
-	glVertex2i(320,100);
+    glColor3ub(160.0, 90.0, 22.0);
+	glVertex2i(160,50);
 
     glEnd();
 
@@ -1129,11 +700,11 @@ void Boat()
 
 	glColor3f(0.0, 0.0, 0.0);
 
-	glVertex2i(360,140);
+	glVertex2i(180,70);
 
-	glVertex2i(350, 80);
+	glVertex2i(175, 40);
 
-	glVertex2i(360,50);
+	glVertex2i(180,25);
 
     glEnd();
 
@@ -1148,7 +719,7 @@ void update(int value)
 
     if(position <-300.0)
 
-        position = 1500.0f;
+        position = 250.0f;
 
     position -= _move;
 
@@ -1157,281 +728,6 @@ void update(int value)
 	glutTimerFunc(50, update, 0);
 }
 
-
-
-/// Tree_Model
-
-void Tree_Model_One()
-{
-
-    glPushMatrix();
-
-    glTranslatef(110,110,0);
-
-    circle(15);
-
-    glPopMatrix();
-
-    glPushMatrix();
-
-    glTranslatef(110,100,0);
-
-    circle(15);
-
-    glPopMatrix();
-
-    glBegin(GL_POLYGON);
-
-    glColor3ub(27.0, 38,49);
-
-	glVertex2f(109, 70);
-
-	glVertex2f(109, 90);
-
-	glVertex2f(111, 90);
-
-	glVertex2f(111, 70);
-
-    glEnd();
-
-
-}
-
-void Tree_Model_Two()
-{
-
-    glPushMatrix();
-
-    glTranslatef(130,130,0);
-
-    circle(5);
-
-    glPopMatrix();
-
-    glPushMatrix();
-
-    glTranslatef(125,126,0);
-
-    circle(5);
-
-    glPopMatrix();
-
-
-
-    glPushMatrix();
-
-    glTranslatef(135,126,0);
-
-    circle(5);
-
-    glPopMatrix();
-
-
-
-    glPushMatrix();
-
-    glTranslatef(130,125,0);
-
-    circle(5);
-
-    glPopMatrix();
-
-
-
-    glBegin(GL_POLYGON);
-
-    glColor3ub(27, 38, 49);
-
-	glVertex2f(129, 110);
-
-	glVertex2f(129, 124);
-
-	glVertex2f(131, 124);
-
-	glVertex2f(131, 110);
-
-
-    glEnd();
-
-}
-
-
-void Tree_Model_Three()
-{
-
-    glBegin(GL_POLYGON);
-
-	glVertex2f(125, 123);
-
-	glVertex2f(133, 145);
-
-	glVertex2f(141, 123);
-
-	glEnd();
-
-
-    glBegin(GL_POLYGON);
-
-    glColor3ub(27, 38, 49);
-
-	glVertex2f(132, 110);
-
-	glVertex2f(132, 124);
-
-	glVertex2f(134, 124);
-
-	glVertex2f(134, 110);
-
-    glEnd();
-
-}
-
-
-
-///Windmill_Stand_Model
-
-void Windmill_Stand_Model()
-{
-
-    glColor3f(1.0,0.8, 0.7);
-
-    glBegin(GL_POLYGON);
-
-    glVertex2i(375, 100);
-
-    glVertex2i(380, 240);
-
-    glVertex2i(384, 240);
-
-    glVertex2i(390, 100);
-
-    glEnd();
-
-}
-
-
-
-///Windmill_Blades_Model
-
-
-void Windmill_Blade()
-{
-
-    ///Blade_One
-
-    glPushMatrix();
-
-    glRotatef(spin,0,0,90);
-
-    glBegin(GL_POLYGON);
-
-    glVertex2i(-5, 0);
-
-    glVertex2i(-85, -36);
-
-    glVertex2i(-83, -37);
-
-    glVertex2i(-3, -8);
-
-    glEnd();
-
-    glPopMatrix();
-
-
-
-    ///Blade_Two
-
-    glPushMatrix();
-
-    glRotatef(spin,0,0,90);
-
-    glBegin(GL_POLYGON);
-
-    glVertex2i(0, 5);
-
-    glVertex2i(45, 70);
-
-    glVertex2i(50, 73);
-
-    glVertex2i(5, 0);
-
-    glEnd();
-
-    glPopMatrix();
-
-
-
-    ///Blade_Three
-
-    glPushMatrix();
-
-    glRotatef(spin,0,0,90);
-
-    glBegin(GL_POLYGON);
-
-    glVertex2i(68, -78);
-
-    glVertex2i(0,0);
-
-    glVertex2i(5, 5);
-
-    glVertex2i(70, -77);
-
-    glEnd();
-
-    glPopMatrix();
-
-
-
-}
-
-///Windmill_Final_Model
-
-void Windmill(){
-
-
-
-    ///Windmill_Stand
-
-    glColor3f(0.0,0.0, 1.0);
-
-    glPushMatrix();
-
-    Windmill_Stand_Model();
-
-    glPopMatrix();
-
-
-
-    ///Windmill_Motor
-
-   glColor3ub(208, 211, 212);
-
-    glPushMatrix();
-
-    glTranslatef(380,250,0);
-
-    circle(10);
-
-    glPopMatrix();
-
-
-
-    ///Windmill_Rotary_Blades
-
-    glColor3ub(208, 211, 212);
-
-    glPushMatrix();
-
-    glTranslatef(380,251,0);
-
-    Windmill_Blade();
-
-    glPopMatrix();
-
-
-
-}
 
 
   ///plane//
@@ -1548,7 +844,7 @@ void update1(int value)
 /// plane
 
 
-void plane2()
+void planePosition()
 {
 
     glColor3ub(247, 249, 249);
@@ -1846,7 +1142,6 @@ void cloud_five(){
 void cloud_six(){
 
 
-
     glPushMatrix();
 
     glTranslatef(cx+-500,400,0);
@@ -1857,22 +1152,6 @@ void cloud_six(){
 
 }
 
-
-
-
-///Hill_big_Two
-
-void Hill_Big_Two(){
-
-    glPushMatrix();
-
-    glTranslatef(55,180,0);//-20
-
-    hill_big2();
-
-    glPopMatrix();
-
-}
 
 ///Hill_Small_One
 
@@ -1890,314 +1169,20 @@ void Hill_Small_One(){
 
 }
 
-///House_big_Two
 
-void House_Big_One(){
-
-    glPushMatrix();
-
-    glTranslatef(560,0,0);//-20
-
-    house_smallt();
-
-    glPopMatrix();
-}
-
-void House_Big_Two(){
+void Hill_Right_Bottom(){
 
     glPushMatrix();
 
-    glTranslatef(675,50,0);//-20
+    glTranslatef(430,300,0);
 
-    house_small();
-
-    glPopMatrix();
-}
-
-void Hill_Small_two(){
-
-    glPushMatrix();
-
-    glTranslatef(400,160,0);
-
-    hill_123();
+    hill_RightBottom();
 
     glPopMatrix();
 
 
 
 }
-
-/// Tilla_One_Model_One
-
-
-
-void Tilla_One(){
-
-
-    glPushMatrix();
-
-    glTranslatef(0,200,0);
-
-    Tilla_One_Model();
-
-    glPopMatrix();
-
-
-}
-
-///Tilla_Two_Model_Two
-
-void Tilla_Two(){
-
-    glPushMatrix();
-
-    glTranslatef(0,200,0);
-
-    Tilla_Two_Model();
-
-    glPopMatrix();
-
-
-}
-
-///Tilla_Three_Model_Two
-
-void Tilla_Three(){
-
-
-    glPushMatrix();
-
-    glTranslatef(400,200,0);
-
-    Tilla_Two_Model();
-
-    glPopMatrix();
-
-
-}
-
-///Tilla_Four_Model_One
-
-void Tilla_Four(){
-
-
-    glColor3f(0.833, 1., 0.0);
-
-    glPushMatrix();
-
-    glTranslatef(380,200,0);
-
-
-    Tilla_One_Model();
-
-    glPopMatrix();
-
-
-}
-
-///Tree_1
-
-void Tree_One(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(0,200,0);
-
-    Tree_Model_One();
-
-    glPopMatrix();
-
-}
-
-
-
-///Tree_2
-
-void Tree_Two(){
-
-     glColor3ub(46, 204, 13.0);
-
-     glPushMatrix();
-
-     glTranslatef(540,200,0);
-
-     Tree_Model_One();
-
-     glPopMatrix();
-
-}
-
-///Tree_3
-
-void Tree_Three(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(750,200,0);
-
-    Tree_Model_One();
-
-    glPopMatrix();
-
-}
-
-///Tree_4
-
-void Tree_Four(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(292,240,0);
-
-    Tree_Model_One();
-
-    glPopMatrix();
-
-}
-
-
-
-///Tree_5
-
-void Tree_Five(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(30,180,0);//-20
-
-    Tree_Model_Two();
-
-    glPopMatrix();
-
-}
-
-
-
-///Tree_6
-
-void Tree_Six(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(50,190,0);//-10
-
-    Tree_Model_Two();
-
-    glPopMatrix();
-
-}
-
-///Tree_7
-
-void Tree_Seven(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(322,200,0);
-
-    Tree_Model_Two();
-
-    glPopMatrix();
-
-}
-
-
-
-///Tree_8
-
-void Tree_Eight(){
-
-     glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(350,185,0);
-
-    Tree_Model_Two();
-
-    glPopMatrix();
-
-}
-
-
-
-///Tree_12
-
-void Tree_Twelve(){
-
-    glColor3ub(46, 204, 13.0);
-
-    glPushMatrix();
-
-    glTranslatef(408,178,0);//-22
-
-    Tree_Model_Three();
-
-    glPopMatrix();
-
-}
-
-
-
-///Windmill
-
-void Windmill_One(){
-
-    glColor3f(0.11, 0.23, 0.36);
-
-    glPushMatrix();
-
-    glTranslatef(0,190,0);//-10
-
-    Windmill();
-
-    glPopMatrix();
-
-}
-
-
-
-void Windmill_Two(){
-
-    glColor3f(0.11, 0.23, 0.36);
-
-    glPushMatrix();
-
-    glTranslatef(50,130,0);//-70
-
-    Windmill();
-
-    glPopMatrix();
-
-}
-
-void tree(){
-
-    glColor3f(0.11, 0.23, 0.36);
-
-    glPushMatrix();
-
-    glTranslatef(-120,-110,0);//-90
-
-    Windmill();
-
-    glPopMatrix();
-
-}
-
 
 ///Object_End
 
@@ -2218,17 +1203,9 @@ void display(void)
 
     star();
 
-    House_Big_Two();
+    planePosition();
 
-    plane2();
-
-    tree();
-
-    Tilla_Four();
-
-    Hill_Big_Two();
-
-    Hill_Small_two();
+    Hill_Right_Bottom();
 
     Hill_Small_One();
 
@@ -2236,37 +1213,7 @@ void display(void)
 
     cloud_four();
 
-    Windmill_One();
-
-    Windmill_Two();
-
-    Tilla_One();
-
-    Tilla_Two();
-
-    Tilla_Three();
-
     cloud_one();
-
-    Tree_One();
-
-    Tree_Two();
-
-    Tree_Three();
-
-    Tree_Four();
-
-    Tree_Five();
-
-    Tree_Six();
-
-    Tree_Seven();
-
-    Tree_Eight();
-
-    Tree_Twelve();
-
-    House_Big_One();
 
     cloud_two();
 
@@ -2277,7 +1224,7 @@ void display(void)
     beach();
 
     Boat();
-
+    lightHouse();
 
 	glFlush();
 
@@ -2289,9 +1236,6 @@ void display(void)
 
 void move_right(){
 
-
-
-    spin = spin +.1;
     ax = ax + .05;
     bx = bx + .08;
     cx = cx + .10;
